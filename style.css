@@ -22,10 +22,7 @@ p{
     line-height: 1.6;
     font-weight: 600;
 }
-a{
-    font-weight: normal;
-    font-size: 16px;
-}
+
 section{
     padding: 50px 0;
 }
@@ -68,17 +65,24 @@ nav{
 .navBar{
     display: flex;
     flex-grow: 1;  
+   
 }
 .navBar li{
     list-style: none;
     padding: 0 20px;
-    color: darkgray;
-    font-size: 20px;
-    font-weight: 600;
-   
 }
 .menuButton{
     display: none;
+}
+.navBar li a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    color: darkgray;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: #52d5d5;
 }
 
 
@@ -192,7 +196,7 @@ nav{
     width: 100%;
 }
 
-
+/*-------------------------------------------*/
 .about{
     text-align: center;
     width: 50%;
@@ -256,6 +260,9 @@ h3{
     margin-top: 8%;
 }
 
+
+/*-------------------------------*/
+
 .final-section{
     width: 100%;
     background-color: #3a2f48;
@@ -297,36 +304,12 @@ justify-content: space-between;
     padding: 0 20px 5px 0;
 }
 
-
-    /***************** tablet screen ****************/
-@media screen and (max-width: 900px) {
-
-    .main-text {
-        width: 100%;
-    }
-
-    .main-text h1 {
-        font-size: 45px;
-        line-height: 45px;
-    }
-
-    .about {
-        width: 100%;
-    }
-
-    .about h2 {
-        font-size: 30px;
-    }
-
-    .info-card {
-        padding: 70px 20px 30px 20px;
-    }
-
-    .mid-box form {
-        flex-direction: row;
-    }
-
+.footer-icons img:hover{
+    
+    mix-blend-mode:overlay;
 }
+
+
         
 
 /***************** mobile screen ****************/
